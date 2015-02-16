@@ -19,8 +19,8 @@
 <script src="grey.js"></script>
 <script src="table.js"></script>
 <script>
-  var grey = new Grey();
-  setInterval(function() { grey.increment(); }, INTERVAL / 2.0);
-  document.getElementById('table').appendChild(makeColorTable());
+  var table = makeColorTable();
+  document.getElementById('table').appendChild(table);
+  runGrey(table);
 </script>
 </body> </html>
