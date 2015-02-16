@@ -9,12 +9,17 @@
    style="font-size:30px"/>
 <p id="digits8"
    style="font-size:120px; position: relative; top: -120px; left: -8px"/>
+<div id="table"
+   style="font-size:120px; position: relative; top: -480"/>
+
 </pre>
 
 <script src="guan.js"></script>
 <script src="grey.js"></script>
+<script src="table.js"></script>
 <script>
   var grey = new Grey();
   setInterval(function() { grey.increment(); }, INTERVAL / 2.0);
+  document.getElementById('table').appendChild(makeTable(3, 3));
 </script>
 </body> </html>
