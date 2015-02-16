@@ -15,11 +15,12 @@
 </pre>
 
 <script src="guan.js"></script>
+<script src="colors.js"></script>
 <script src="grey.js"></script>
 <script src="table.js"></script>
 <script>
   var grey = new Grey();
   setInterval(function() { grey.increment(); }, INTERVAL / 2.0);
-  document.getElementById('table').appendChild(makeTable(3, 3));
+  document.getElementById('table').appendChild(makeColorTable());
 </script>
 </body> </html>

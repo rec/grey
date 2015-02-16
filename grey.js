@@ -37,7 +37,7 @@ function Grey() {
   this.digits2 = new Guan(2, 15);
 
   this.display = function() {
-    var color = this.getColor();
+    var color = '#' + this.getColor();
     var d2 = this.digits2.toString();
     set_element('digits2', chunkString(d2, 3).join(' '), color);
     set_element('digits8', this.digits8.toString(), color);
@@ -60,10 +60,10 @@ Grey.prototype.increment = function() {
 };
 
 Grey.prototype.getColor = function() {
-  var result = '#';
+  var result = [];
   for (var i = 0; i < 3; ++i)
-    result += toPaddedString(this.color.code[i], 16, 2);
-  return result;
+    result.push(toPaddedString(this.color.code[i], 16, 2));
+  return result.join('');
 };
 
 //
