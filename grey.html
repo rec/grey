@@ -5,13 +5,16 @@
 
 <body>
 <pre>
-<p id="digits2" style="font-size:30px"/>
-<p id="digits" style="font-size:120px; position: relative; top: -120px; left: -8px"/>
+<p id="digits2"
+   style="font-size:30px"/>
+<p id="digits8"
+   style="font-size:120px; position: relative; top: -120px; left: -8px"/>
 </pre>
 
-
+<script src="guan.js"></script>
 <script src="grey.js"></script>
 <script>
-  var timerVar = setInterval(increment, INTERVAL);
+  var grey = new Grey();
+  setInterval(function() { grey.increment(); }, INTERVAL / 2.0);
 </script>
 </body> </html>
