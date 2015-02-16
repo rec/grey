@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+</head>
+
+<body>
+<pre>
+<p id="digits2"
+   style="font-size:30px"/>
+<p id="digits8"
+   style="font-size:120px; position: relative; top: -120px; left: -8px"/>
+<div id="table"
+   style="font-size:120px; position: relative; top: -480"/>
+
+</pre>
+
+<script src="guan.js"></script>
+<script src="colors.js"></script>
+<script src="grey.js"></script>
+<script src="table.js"></script>
+<script>
+  var table = makeColorTable();
+  document.getElementById('table').appendChild(table);
+  runGrey(table);
+</script>
+</body> </html>
